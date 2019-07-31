@@ -76,6 +76,44 @@ div{
   width: 200%;
   padding: 20px;
 }
+.containerT {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
 </style>
 <body><center>
 <a href="http://indianairforce.nic.in/"><img src="1200px-IAF_Crest.svg.png" height="185" width="170"></a>
@@ -245,7 +283,7 @@ The aircraft is tailor-made for Indian specifications and integrates Indian syst
 </div>
 
 <h2>L.C.A TEJAS</h2>
-<div class="container">
+<div class="containerT">
   <img src="IAF_Tejas_full_size_(32941198511).jpg"height="455" width="800">
   <div class="middle">
     <div class="text">The HAL Tejas is an Indian single-engine, delta wing, multirole light fighter designed by the Aeronautical Development Agency (ADA) and Hindustan Aeronautics Limited (HAL) for the Indian Air Force and Indian Navy. It came from the Light Combat Aircraft (LCA) programme, which began in the 1980s to replace India's ageing MiG-21 fighters. In 2003, the LCA was officially named "Tejas".[8]
